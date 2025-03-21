@@ -28,99 +28,69 @@ const nextConfig = {
       },
     ],
   },
-  async redirects() {
-    return [
-      {
-        source: '/user',
-        missing: [
-          {
-            type: 'cookie',
-            key: 'session',
-          },
-        ],
-        destination: '/',
-        permanent: false,
-      },
-    ]
-  },
   webpack: (config) => {
     config.plugins.push(
       paraglideWebpackPlugin({
         project: './project.inlang',
         outdir: './src/paraglide',
-        strategy: ['url', 'baseLocale'],
+        strategy: ['url', 'cookie', 'baseLocale'],
         urlPatterns: [
           // local development settings
           {
-            pattern: ':protocol://localhost::port?/:locale(hi|id|de|ru|pt|es)?/:path(.*)?',
-            deLocalizedNamedGroups: { locale: null },
-            localizedNamedGroups: {
-              en: { locale: null },
-              hi: { locale: 'hi' },
-              id: { locale: 'id' },
-              de: { locale: 'de' },
-              ru: { locale: 'ru' },
-              pt: { locale: 'pt' },
-              es: { locale: 'es' },
-            },
+            pattern: "http://localhost::port?/:path(.*)?",
+            localized: [
+              ["en", "http://localhost::port?/:path(.*)?"],
+              ["hi", "http://localhost::port?/hi/:path(.*)?"],
+              ["id", "http://localhost::port?/id/:path(.*)?"],
+              ["de", "http://localhost::port?/de/:path(.*)?"],
+              ["ru", "http://localhost::port?/ru/:path(.*)?"],
+              ["pt", "http://localhost::port?/pt/:path(.*)?"],
+              ["es", "http://localhost::port?/es/:path(.*)?"]
+            ]
           },
           {
-            pattern: ':protocol://:stage(stage\.)?thetrender.com/:locale(es)?/:path(.*)?',
-            deLocalizedNamedGroups: { locale: null },
-            localizedNamedGroups: {
-              en: { locale: null },
-              es: { locale: 'es' },
-            },
+            pattern: "https://thetrender.com/:path(.*)?",
+            localized: [
+              ["en", "https://thetrender.com/:path(.*)?"],
+              ["es", "https://thetrender.com/es/:path(.*)?"],
+            ],
           },
           {
-            pattern: ':protocol://:stage(stage\.)?thetrender.co.uk/:path(.*)?',
-            deLocalizedNamedGroups: { locale: null },
-            localizedNamedGroups: {
-              en: { locale: null },
-            },
+            pattern: "https://thetrender.co.uk/:path(.*)?",
+            localized: [
+              ["en", "https://thetrender.co.uk/:path(.*)?"],
+            ],
           },
           {
-            pattern: ':protocol://:stage(stage\.)?thetrender.mx/:path(.*)?',
-            deLocalizedNamedGroups: { locale: null },
-            localizedNamedGroups: {
-              es: { locale: null },
-            },
+            pattern: "https://thetrender.id/:path(.*)?",
+            localized: [
+              ["id", "https://thetrender.id/:path(.*)?"],
+            ],
           },
           {
-            pattern: ':protocol://:stage(stage\.)?thetrender.id/:path(.*)?',
-            deLocalizedNamedGroups: { locale: null },
-            localizedNamedGroups: {
-              id: { locale: null },
-            },
+            pattern: "https://thetrender.in/:path(.*)?",
+            localized: [
+              ["en", "https://thetrender.in/en/:path(.*)?"],
+              ["hi", "https://thetrender.in/:path(.*)?"],
+            ],
           },
           {
-            pattern: ':protocol://:stage(stage\.)?thetrender.in/:locale(hi)?/:path(.*)?',
-            deLocalizedNamedGroups: { locale: null },
-            localizedNamedGroups: {
-              en: { locale: null },
-              hi: { locale: 'hi' },
-            },
+            pattern: "https://thetrender.de/:path(.*)?",
+            localized: [
+              ["de", "https://thetrender.de/:path(.*)?"],
+            ],
           },
           {
-            pattern: ':protocol://:stage(stage\.)?thetrender.de/:path(.*)?',
-            deLocalizedNamedGroups: { locale: null },
-            localizedNamedGroups: {
-              de: { locale: null },
-            },
+            pattern: "https://thetrender.com.br/:path(.*)?",
+            localized: [
+              ["pt", "https://thetrender.com.br/:path(.*)?"],
+            ],
           },
           {
-            pattern: ':protocol://:stage(stage\.)?thetrender.com.br/:path(.*)?',
-            deLocalizedNamedGroups: { locale: null },
-            localizedNamedGroups: {
-              pt: { locale: null },
-            },
-          },
-          {
-            pattern: ':protocol://:stage(stage\.)?thetrender.ru/:path(.*)?',
-            deLocalizedNamedGroups: { locale: null },
-            localizedNamedGroups: {
-              ru: { locale: null },
-            },
+            pattern: "https://thetrender.ru/:path(.*)?",
+            localized: [
+              ["ru", "https://thetrender.ru/:path(.*)?"],
+            ],
           },
         ],
       }),

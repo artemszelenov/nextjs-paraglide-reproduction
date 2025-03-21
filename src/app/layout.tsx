@@ -9,9 +9,9 @@ import {
 } from '@/paraglide/runtime.js'
 import { headers } from 'next/headers'
 import { cache } from 'react'
-import {Nav} from './Nav'
+import { Nav } from './Nav'
 
-const ssrLocale = cache(() => ({ locale: baseLocale, origin: 'http://fallback.com' }))
+const ssrLocale = cache(() => ({ locale: baseLocale, origin: 'http://localhost' }))
 
 // overwrite the getLocale function to use the locale from the request
 overwriteGetLocale(() => assertIsLocale(ssrLocale().locale))

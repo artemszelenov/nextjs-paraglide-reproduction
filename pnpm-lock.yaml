@@ -19,20 +19,20 @@ importers:
         version: 19.0.0(react@19.0.0)
     devDependencies:
       '@inlang/paraglide-js':
-        specifier: 2.0.0-beta.20
-        version: 2.0.0-beta.20
+        specifier: 2.0.2
+        version: 2.0.2
       '@types/node':
-        specifier: ^20.17.19
-        version: 20.17.19
+        specifier: ^20.17.25
+        version: 20.17.25
       '@types/react':
-        specifier: ^19.0.10
-        version: 19.0.10
+        specifier: ^19.0.12
+        version: 19.0.12
       '@types/react-dom':
         specifier: ^19.0.4
-        version: 19.0.4(@types/react@19.0.10)
+        version: 19.0.4(@types/react@19.0.12)
       typescript:
-        specifier: ^5.7.3
-        version: 5.7.3
+        specifier: ^5.8.2
+        version: 5.8.2
 
 packages:
 
@@ -144,19 +144,19 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@inlang/paraglide-js@2.0.0-beta.20':
-    resolution: {integrity: sha512-E014udq6V76dVvCzhr43B74TDGMvwTiX+Ann9iToihfwEn5ygISYaBWgW64f/SVFx+XnSdvpSfyrFzJJUZ841Q==}
+  '@inlang/paraglide-js@2.0.2':
+    resolution: {integrity: sha512-zlkK+2aDhTR5v/hAZZLAc9jl7wkbGe/yeJ7pfKucYqbfFflOplLPLm6+Z7QORExYTB062GD230CAsxLURps0SA==}
     hasBin: true
 
   '@inlang/recommend-sherlock@0.2.1':
     resolution: {integrity: sha512-ckv8HvHy/iTqaVAEKrr+gnl+p3XFNwe5D2+6w6wJk2ORV2XkcRkKOJ/XsTUJbPSiyi4PI+p+T3bqbmNx/rDUlg==}
 
-  '@inlang/sdk@2.3.0':
-    resolution: {integrity: sha512-KPiZbI7fKmGf/7aRrrluAG/KGJn/tgBvz/4IoXKIEZvljh9Mog/kYTHu3MkF2IsOSxr9ZE42VaPXTpUzURvOlA==}
+  '@inlang/sdk@2.4.3':
+    resolution: {integrity: sha512-ClA8zk/4dQEI7HDVhrEFUsG3sZ+KixI+voncAVQ/xoE5aJnSYer6jWIDkMFx2HRoJV4shmIMOL5gZNgv6uDKIA==}
     engines: {node: '>=18.0.0'}
 
-  '@lix-js/sdk@0.4.1':
-    resolution: {integrity: sha512-8v9gkLuEa/VXLkDwuXLr+wjZY1D7dPXVhez97jJULYoKurLVuhh2SH/Sv4jF43biV0wee44PGADrFPuU00lnsQ==}
+  '@lix-js/sdk@0.4.3':
+    resolution: {integrity: sha512-7SfVz55vLDc7u2ZqPFko2xPwTtxJcxu+mdQs4XBDeFmnllqh3wTFSgr3Wpt09PR0jj4gz4+uGOWV+Yt5EfNw/w==}
     engines: {node: '>=21'}
 
   '@lix-js/server-api-schema@0.1.1':
@@ -226,19 +226,19 @@ packages:
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
-  '@types/node@20.17.19':
-    resolution: {integrity: sha512-LEwC7o1ifqg/6r2gn9Dns0f1rhK+fPFDoMiceTJ6kWmVk6bgXBI/9IOWfVan4WiAavK9pIVWdX0/e3J+eEUh5A==}
+  '@types/node@20.17.25':
+    resolution: {integrity: sha512-bT+r2haIlplJUYtlZrEanFHdPIZTeiMeh/fSOEbOOfWf9uTn+lg8g0KU6Q3iMgjd9FLuuMAgfCNSkjUbxL6E3Q==}
 
   '@types/react-dom@19.0.4':
     resolution: {integrity: sha512-4fSQ8vWFkg+TGhePfUzVmat3eC14TXYSsiiDSLI0dVLsrm9gZFABjPy/Qu6TKgl1tq1Bu1yDsuQgY3A3DOjCcg==}
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@19.0.10':
-    resolution: {integrity: sha512-JuRQ9KXLEjaUNjTWpzuR231Z2WpIwczOkBEIvbHNCzQefFIT0L8IqE6NV6ULLyC1SI/i234JnDoMkfg+RjQj2g==}
+  '@types/react@19.0.12':
+    resolution: {integrity: sha512-V6Ar115dBDrjbtXSrS+/Oruobc+qVbbUxDFC1RSbRqLt5SYvxxyIDrSC85RWml54g+jfNeEMZhEj7wW07ONQhA==}
 
-  acorn@8.14.0:
-    resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
+  acorn@8.14.1:
+    resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -249,8 +249,8 @@ packages:
     resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
     engines: {node: '>=10.16.0'}
 
-  caniuse-lite@1.0.30001701:
-    resolution: {integrity: sha512-faRs/AW3jA9nTwmJBSO1PQ6L/EOgsB5HMQQq4iCu5zhPgVVgO/pZRHlmatwijZKetFw8/Pr4q6dEN8sJuq8qTw==}
+  caniuse-lite@1.0.30001706:
+    resolution: {integrity: sha512-3ZczoTApMAZwPKYWmwVbQMFpXBDds3/0VciVoUwPUbldlYyVLmRVuRs/PcUZtHpbLRpzzDvrvnFuREsGt6lUug==}
 
   client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
@@ -323,12 +323,12 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
-  kysely@0.27.5:
-    resolution: {integrity: sha512-s7hZHcQeSNKpzCkHRm8yA+0JPLjncSWnjb+2TIElwS2JAqYr+Kv3Ess+9KFfJS0C1xcQ1i9NkNHpWwCYpHMWsA==}
+  kysely@0.27.6:
+    resolution: {integrity: sha512-FIyV/64EkKhJmjgC0g2hygpBv5RNWVPyNCqSAD7eTCv6eFWNIi4PN1UvdSJGicN/o35bnevgis4Y0UDC0qi8jQ==}
     engines: {node: '>=14.0.0'}
 
-  nanoid@3.3.8:
-    resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
+  nanoid@3.3.11:
+    resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -417,16 +417,16 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  typescript@5.7.3:
-    resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
+  typescript@5.8.2:
+    resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
     engines: {node: '>=14.17'}
     hasBin: true
 
   undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
-  unplugin@2.2.0:
-    resolution: {integrity: sha512-m1ekpSwuOT5hxkJeZGRxO7gXbXT3gF26NjQ7GdVHoLoF8/nopLcd/QfPigpCy7i51oFHiRJg/CyHhj4vs2+KGw==}
+  unplugin@2.2.2:
+    resolution: {integrity: sha512-Qp+iiD+qCRnUek+nDoYvtWX7tfnYyXsrOnJ452FRTgOyKmTM7TUJ3l+PLPJOOWPTUyKISKp4isC5JJPSXUjGgw==}
     engines: {node: '>=18.12.0'}
 
   urlpattern-polyfill@10.0.0:
@@ -521,14 +521,14 @@ snapshots:
   '@img/sharp-win32-x64@0.33.5':
     optional: true
 
-  '@inlang/paraglide-js@2.0.0-beta.20':
+  '@inlang/paraglide-js@2.0.2':
     dependencies:
       '@inlang/recommend-sherlock': 0.2.1
-      '@inlang/sdk': 2.3.0
+      '@inlang/sdk': 2.4.3
       commander: 11.1.0
       consola: 3.4.0
       json5: 2.2.3
-      unplugin: 2.2.0
+      unplugin: 2.2.2
       urlpattern-polyfill: 10.0.0
     transitivePeerDependencies:
       - babel-plugin-macros
@@ -537,24 +537,24 @@ snapshots:
     dependencies:
       comment-json: 4.2.5
 
-  '@inlang/sdk@2.3.0':
+  '@inlang/sdk@2.4.3':
     dependencies:
-      '@lix-js/sdk': 0.4.1
+      '@lix-js/sdk': 0.4.3
       '@sinclair/typebox': 0.31.28
-      kysely: 0.27.5
-      sqlite-wasm-kysely: 0.3.0(kysely@0.27.5)
+      kysely: 0.27.6
+      sqlite-wasm-kysely: 0.3.0(kysely@0.27.6)
       uuid: 10.0.0
     transitivePeerDependencies:
       - babel-plugin-macros
 
-  '@lix-js/sdk@0.4.1':
+  '@lix-js/sdk@0.4.3':
     dependencies:
       '@lix-js/server-api-schema': 0.1.1
       dedent: 1.5.1
       human-id: 4.1.1
       js-sha256: 0.11.0
-      kysely: 0.27.5
-      sqlite-wasm-kysely: 0.3.0(kysely@0.27.5)
+      kysely: 0.27.6
+      sqlite-wasm-kysely: 0.3.0(kysely@0.27.6)
       uuid: 10.0.0
     transitivePeerDependencies:
       - babel-plugin-macros
@@ -597,19 +597,19 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@types/node@20.17.19':
+  '@types/node@20.17.25':
     dependencies:
       undici-types: 6.19.8
 
-  '@types/react-dom@19.0.4(@types/react@19.0.10)':
+  '@types/react-dom@19.0.4(@types/react@19.0.12)':
     dependencies:
-      '@types/react': 19.0.10
+      '@types/react': 19.0.12
 
-  '@types/react@19.0.10':
+  '@types/react@19.0.12':
     dependencies:
       csstype: 3.1.3
 
-  acorn@8.14.0: {}
+  acorn@8.14.1: {}
 
   array-timsort@1.0.3: {}
 
@@ -617,7 +617,7 @@ snapshots:
     dependencies:
       streamsearch: 1.1.0
 
-  caniuse-lite@1.0.30001701: {}
+  caniuse-lite@1.0.30001706: {}
 
   client-only@0.0.1: {}
 
@@ -675,9 +675,9 @@ snapshots:
 
   json5@2.2.3: {}
 
-  kysely@0.27.5: {}
+  kysely@0.27.6: {}
 
-  nanoid@3.3.8: {}
+  nanoid@3.3.11: {}
 
   next@15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
     dependencies:
@@ -685,7 +685,7 @@ snapshots:
       '@swc/counter': 0.1.3
       '@swc/helpers': 0.5.15
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001701
+      caniuse-lite: 1.0.30001706
       postcss: 8.4.31
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
@@ -708,7 +708,7 @@ snapshots:
 
   postcss@8.4.31:
     dependencies:
-      nanoid: 3.3.8
+      nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -760,10 +760,10 @@ snapshots:
 
   source-map-js@1.2.1: {}
 
-  sqlite-wasm-kysely@0.3.0(kysely@0.27.5):
+  sqlite-wasm-kysely@0.3.0(kysely@0.27.6):
     dependencies:
       '@sqlite.org/sqlite-wasm': 3.48.0-build4
-      kysely: 0.27.5
+      kysely: 0.27.6
 
   streamsearch@1.1.0: {}
 
@@ -774,13 +774,13 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  typescript@5.7.3: {}
+  typescript@5.8.2: {}
 
   undici-types@6.19.8: {}
 
-  unplugin@2.2.0:
+  unplugin@2.2.2:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.14.1
       webpack-virtual-modules: 0.6.2
 
   urlpattern-polyfill@10.0.0: {}

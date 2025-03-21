@@ -7,7 +7,7 @@ export default function Home() {
     <div className={styles.page}>
       <main>
         <em style={{ display: 'block', marginBottom: 10 }}>Server side link component: </em>
-        <Link href={localizeHref('/test-link')} style={{ textDecoration: 'underline' }}>Go to test page</Link>
+        <Link href={localizeHref('/test-link', { locale: 'ru' })} style={{ textDecoration: 'underline' }}>Go to test page</Link>
       </main>
     </div>
   );

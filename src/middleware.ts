@@ -1,12 +1,14 @@
 import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
-import { serverMiddleware } from './paraglide/runtime'
+import { paraglideMiddleware } from './paraglide/server'
 
 export async function middleware(request: NextRequest) {
-  return serverMiddleware(request, ({ request, locale }) => {
+  return paraglideMiddleware(request, ({ request, locale }) => {
+    console.log("middleware - start");
     request.headers.set('x-paraglide-locale', locale)
     request.headers.set('x-paraglide-request-url', request.url)
     const response = NextResponse.rewrite(request.url, request)
+    console.log("middleware - end");
     return response
   })
 }
